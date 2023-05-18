@@ -43,7 +43,11 @@ WHERE address_street_name = 'Northwestern Dr'
 ORDER BY address_number DESC   
 LIMIT 1;
 ```  
-![2](https://github.com/Irina-Smol/SQL_Murder_Mystery/assets/112115002/0e118282-9bf2-4080-8f55-d2c4822c1392)
+
+|     id|          name | license_id|   address_number| address_street_name|          ssn| 
+|------:|:-------------:|:---------:|:---------------:|:------------------:|:------------| 
+|  14887| Morty Schapiro| 118009    |             4919|     Northwestern Dr|111564949    |
+
 
 Найдем Аннабель
 
@@ -52,7 +56,11 @@ SELECT * FROM person
 WHERE name like 'Annabel%'    
 AND address_street_name = 'Franklin Ave';
 ```
-![3](https://github.com/Irina-Smol/SQL_Murder_Mystery/assets/112115002/efd3ee3a-6c20-43d3-96d6-507cc55e03c2)
+
+ |     id|          name | license_id|   address_number| address_street_name|          ssn|  
+ |------:|:-------------:|:---------:|:---------------:|:------------------:|:------------|  
+ |  16371|Annabel Miller |	490173	 |  103	           |Franklin Ave	    |318771143    |
+
 
 > Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr". The second witness, named Annabel, lives somewhere on "Franklin Ave".
 
@@ -64,7 +72,6 @@ JOIN person ON person.id = interview.person_id
 WHERE person_id in (14887, 16371);
 ```
 
-![4](https://github.com/Irina-Smol/SQL_Murder_Mystery/assets/112115002/9587f3ac-283c-4a35-96dd-01fc5c0b46aa)
 
 > Морти - Я услышал выстрел, а затем увидел выбегающего человека. У него была сумка «Get Fit Now Gym». Членский номер на сумке начинался с «48Z». Эти сумки есть только у золотых участников. Мужчина сел в машину с номерным знаком «H42W».
 
