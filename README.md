@@ -172,3 +172,7 @@ SELECT value FROM solution;
 ### Result (Результат)
 
 Убийцей является Джереми Бауэрс, а стояла за этим убийством Миранда Пристли
+
+![3](https://github.com/Irina-Smol/SQL_Murder_Mystery/assets/112115002/3e36a1ca-943a-4872-b3de-23281b20293b)
+
+
